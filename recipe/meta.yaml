@@ -1,5 +1,5 @@
 {% set name = "niquests" %}
-{% set version = "3.8.0" %}
+{% set version = "3.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/niquests-{{ version }}.tar.gz
-  sha256: 2d5dc5dee74dbff118100aadbf07e37a4ff74cf42eecd7b1a6ff2b446c47cbc1
+  sha256: 948df009a55da59d532d07b69dc46902796033e43cd2d2d683474e7aa086ad0e
 
 build:
   noarch: python
