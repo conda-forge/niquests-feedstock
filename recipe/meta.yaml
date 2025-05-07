@@ -22,10 +22,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - charset-normalizer >=2,<4
-    - idna >=2.5,<4
     - wassima >=1.0.1,<2
-    - kiss-headers >=2,<4
-    - urllib3-future >=2.9.900,<3
+    - urllib3-future >=2.12.900,<3
 
 test:
   imports:
