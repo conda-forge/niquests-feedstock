@@ -1,5 +1,5 @@
 {% set name = "niquests" %}
-{% set version = "3.14.0" %}
+{% set version = "3.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/niquests-{{ version }}.tar.gz
-  sha256: 86e484c2c60444aa96069c15f6295af6e25a8bad50781e1326df1b5c7ab48339
+  sha256: 0750eb7fb4bdf46af5041e75c5f37a2a6974e6f620b0f6a234c4b858dbf38ddb
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - charset-normalizer >=2,<4
-    - wassima >=1.0.1,<2
-    - urllib3-future >=2.12.900,<3
+    - wassima >=1.0.1,<3
+    - urllib3-future >=2.13.903,<3
 
 test:
   imports:
