@@ -26,8 +26,7 @@ requirements:
     - python >=${{ python_min }}
     - charset-normalizer >=2,<4
     - wassima >=1.0.1,<3
-    - urllib3-future <3,>=2.13.903
-    - urllib3.future >=2.13.903,<3
+    - urllib3-future <3,>=2.13.90
 tests:
   - python:
       imports:
