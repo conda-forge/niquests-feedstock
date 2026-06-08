@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: niquests
-  version: 3.19.0
+  version: 3.19.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/niquests-${{ version }}.tar.gz
-  sha256: e3c9fc8aa7c77c3d066dd6a0551d15eee1660ac14a497264577115c3296022ff
+  sha256: 2c34591744c7ade45f5f3a65a637cf1366d399eb514200005a8823de0d66b91e
 
 build:
   number: 0
@@ -26,7 +26,8 @@ requirements:
     - python >=${{ python_min }}
     - charset-normalizer >=2,<4
     - wassima >=1.0.1,<3
-    - urllib3-future <3,>=2.13.90
+    - urllib3-future <3,>=2.13.903
+    - urllib3.future >=2.13.903,<3
 tests:
   - python:
       imports:
